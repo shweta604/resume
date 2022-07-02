@@ -233,7 +233,7 @@ section:nth-child(2n){
 .timeline-container{
     width: 75%;
     position: relative;
-    border: 1px solid black;
+/*     border: 1px solid black; */
     margin-bottom: 2rem;
 }
 
@@ -242,6 +242,8 @@ section:nth-child(2n){
     height: 150px;
     margin: 10px;
     border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0.2rem;
     left: 5%;
 }
 
@@ -294,6 +296,10 @@ section:nth-child(2n){
     font-size: 1rem;
 }
 
+.timeline-box h6, p{
+    text-align: right;
+}
+
 .timeline-box h6{
     margin-top: -0.1rem;
     color: blue;
@@ -302,4 +308,11 @@ section:nth-child(2n){
 .timeline-box p{
     margin-top: -1rem;
     color: darkslategrey;
+}
+
+.timeline-box h6{
+    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png');
+    background-size: contain;
+    height: 2rem;
+    background-repeat: no-repeat;
 }
